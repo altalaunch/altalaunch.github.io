@@ -222,7 +222,7 @@ Main Point
 .main-point {margin-bottom: 20px; }
 .main-point i { display: block; font-size: 56px;}
 .main-point h3 {font-size: 22px; font-weight: 300; margin-top: 20px; }
-.feat-list li i {float: left; font-size: 1.5em; padding: 0; margin-left: 3em;}
+.feat-list li i {float: left; font-size: 1em; padding: 0; margin-left: 3em; color:#08b4da;}
 
 /* ==========================================================================
 Features

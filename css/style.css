@@ -101,7 +101,7 @@ Classes
 .btn-transparent {background-color: transparent; border: 2px solid #FFF;  color: #fff; }
 .btn-transparent:hover {background-color: #2a2a2a; border-color: #2a2a2a;}
 
-.btn-price {color: #FFF;}
+.btn-price {color: #FFF; background-color: #444;}
 .btn-price:hover {background-color: #FFF; border-color: #FFF; color: #2a2a2a;}
 
 .arrow-bottom { position: relative; }
@@ -115,7 +115,7 @@ Color Customizations
 .bg-grey {background-color: #FAFAFA;}
 .bg-grey2 {background-color: #F5F5F5;}
 .bg-blue {background-color: #08b4da;}
-.bg-dark {background-color: #333;}
+.bg-dark {background-color: #444;}
 
 .bg-blue-pattern {background-color: #08b4da; background:url(../img/blue-square.png);}
 .bg-testimonial {background:url(../img/headshot-bg.jpg);}
@@ -188,9 +188,10 @@ Banner
 #banner {padding-top: 60px; background: #1a1a1a;}
 
 .banner-content { clear: both; padding-top: 40px; padding-bottom: 85px; background-image: url(../img/tree_hill.jpg); background-position: top center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height:auto;}
-.banner-content h1 {font-size: 90px; text-align: center; color: #FFF; text-shadow: 0 0px 25px #000000; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
+.banner-content h1 {font-size: 90px; text-align: center; color: #FFF; text-shadow: 0 0px 15px #000000; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom: 10px;}
 .banner-content h2 {color: #FFF;}
 .banner-content h3 {text-align: center; color: #FFF; text-shadow: 0 0px 25px #000000;}
+.banner-content h4 {text-shadow: 0 0px 15px #000000;}
 .banner-content h5 {font-weight: bold; font-size: 16px; color: #FFF; text-align: center; text-shadow: 0 0px 25px #000000;}
 .banner-content p { color: rgba(255,255,255,0.7); }
 
@@ -242,9 +243,8 @@ Forms
 .form-body p {color: rgba(255,255,255,0.6);}
 
 .banner-form .form-control { color: #08b4da; border: none; outline: none; box-shadow: none; padding: 13px 15px; transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; border-radius: 0; height: auto; background-color: rgba(0,0,0,0.4); margin-bottom: 15px;}
-
-.btn-submit { display: block; margin:0 auto; background-color: #08b4da; color: #FFF; border-color:rgba(0,0,0,0.01); width:100%; padding: 11px; border:2px solid #08b4da;}
-.btn-submit:hover {background: #08b4da; border-color: #08b4da;}
+.btn-submit { display: block; margin:0 auto; background-color: #8ac604; color: #FFF; border-color:rgba(0,0,0,0.01); width:50%; padding: 11px; border:2px solid #8ac604;}
+.btn-submit:hover {background: #8ac604; border-color: #8ac604;}
 
 /* ==========================================================================
 Stats
@@ -257,7 +257,7 @@ Stats
 Portfolio
  ========================================================================== */
 .hover-details {width: 100%; height: auto; overflow: hidden; position: relative; -moz-transition: all ease 400ms ease-in-out; -webkit-transition: all ease 400ms ease-in-out; -o-transition: all ease 400ms ease-in-out; transition: all ease 400ms ease-in-out; margin-bottom: 40px; }
-.hover-details .img-cover { width: 100%; height: 100%; opacity: 0; position: absolute; top: 0; left: 0; background: rgba(8, 180, 218, 0.9); -moz-transition: all ease 400ms ease-in-out; -webkit-transition: all ease 400ms ease-in-out; -o-transition: all ease 400ms ease-in-out; transition: all ease 400ms ease-in-out;}
+.hover-details .img-cover { width: 100%; height: 100%; opacity: 0; position: absolute; top: 0; left: 0; background: rgba(138, 198, 4, 0.8); -moz-transition: all ease 400ms ease-in-out; -webkit-transition: all ease 400ms ease-in-out; -o-transition: all ease 400ms ease-in-out; transition: all ease 400ms ease-in-out;}
 .hover-details > img { width: 100%; height: auto; -moz-transition: all ease 400ms ease-in-out; -webkit-transition: all ease 400ms ease-in-out; -o-transition: all ease 400ms ease-in-out; transition: all ease 400ms ease-in-out; }
 
 .img-zoom { width: 45px; height: 45px; background-color: #1a1a1a; line-height: 45px; position: absolute; top: -45%; left: 50%; border-radius: 3px; margin-top: -35px; margin-left:  -25px; -webkit-transition: all ease 400ms ease-in-out; -moz-transition: all ease 400ms ease-in-out; -ms-transition: all ease 400ms ease-in-out; -o-transition: all ease 400ms ease-in-out; transition: all ease 400ms ease-in-out; text-align: center;}
@@ -374,7 +374,7 @@ Media Queries
 /* ------ Mobile Landscape Size to Tablet Portrait (devices and browsers) ------*/
 @media only screen and (max-width: 767px) {
 	.navbar-inverse {background-color: #FFF; padding:0;}
-	.navbar > .container .navbar-brand {margin-left: 15px; color: #1a1a1a; margin-top: 15px;}
+	.navbar > .container .navbar-brand {margin-left: 5px; color: #1a1a1a;}
 	.menu-right {float: none;}
 	.navbar-inverse .navbar-nav > li > a {color: #1a1a1a;}
 	.navbar-inverse .navbar-nav > .active > a,
@@ -394,7 +394,9 @@ Media Queries
 	h4 {font-size: 16px;}
 	img {float: none; display: block; margin: 20px auto;}
 	iframe {max-height: 200px;}
-	.banner-content h1 {font-size: 34px;}
+	.banner-content h1 {font-size: 30px; text-align: center;}
+  .banner-content h3 {font-size: 16px;}
+  .banner-content h4 {text-align: center;}
 	.headline h1 {font-size: 30px;}
 	.headline h2 {font-size: 28px;}
 	.section {padding: 50px 0;}
